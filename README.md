@@ -1,3 +1,5 @@
+## Gerstner Wave Model
+
 Classical sinusoidal displacement moves vertices only vertically, producing unrealistic symmetric profiles. The Gerstner (trochoidal) wave models water particles moving in **circular orbits**, compressing geometry near crests and stretching it in troughs -- matching asymmetric wave profiles observed in real oceans.
 
 For a vertex at position **P** with normalized wave direction **D** projected onto the XZ plane:
@@ -18,7 +20,9 @@ Where:
 - **g = 9.8 m/s^2** is gravitational acceleration
 - The **dispersion relation** `sqrt(g * k)` ties wave speed to wavelength: longer waves travel faster, matching real ocean physics
 
-The wave direction is projected onto the XZ plane and normalized before computation, ensuring displacement occurs only in the horizontal ground plane and vertically. The fragment shader is a pure pass-through -- all visual output is a constant ocean-blue vertex color `(0.25, 0.52, 0.96)`, deliberately omitting lighting to isolate the geometric wave behavior.
+The wave direction is projected onto the XZ plane and normalized before computation, ensuring displacement occurs only in the horizontal ground plane and vertically.
+
+The wave displacement is computed entirely in the vertex shader. The fragment shader is a pure pass-through -- all visual output is a constant ocean-blue vertex color `(0.25, 0.52, 0.96)`, deliberately omitting lighting to isolate the geometric wave behavior.
 
 | Parameter | Value |
 |-----------|-------|
