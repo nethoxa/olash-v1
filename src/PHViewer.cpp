@@ -209,11 +209,11 @@ int main(int argc, char** argv)
     // --------------------------------------------
     // MARAKATUSA
     phViewer.loadShaders(
-            "/home/nemo/Escritorio/PR1/Ej1/src/shaders/vpassthrough.glsl",
-            "/home/nemo/Escritorio/PR1/Ej1/src/shaders/fpassthrough.glsl"
+            SOURCE_DIR "/shaders/vpassthrough.glsl",
+            SOURCE_DIR "/shaders/fpassthrough.glsl"
             );
     phViewer.loadModel(
-            "/home/nemo/Escritorio/PR1/Ej1/src/models/malla.obj"
+            SOURCE_DIR "/models/malla.obj"
             );
     // --------------------------------------------
 

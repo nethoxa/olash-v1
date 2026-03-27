@@ -29,6 +29,9 @@ add_executable(phviewer_vs
         PHViewer.cpp
         PHViewer.h PHViewer.cpp)
 
+target_compile_definitions(phviewer_vs PRIVATE
+        SOURCE_DIR="${CMAKE_CURRENT_SOURCE_DIR}/")
+
 target_link_libraries(phviewer_vs
         glfw
         OpenGL::GL)
