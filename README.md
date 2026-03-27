@@ -1,5 +1,3 @@
-## Gerstner Wave Model
-
 Classical sinusoidal displacement moves vertices only vertically, producing unrealistic symmetric profiles. The Gerstner (trochoidal) wave models water particles moving in **circular orbits**, compressing geometry near crests and stretching it in troughs -- matching asymmetric wave profiles observed in real oceans.
 
 For a vertex at position **P** with normalized wave direction **D** projected onto the XZ plane:
@@ -51,4 +49,6 @@ make
 ./phviewer_vs
 ```
 
-> **Note:** Shader and model paths in `PHViewer.cpp` (lines 211-217) are hardcoded. Update them to match your local directory, or use the `SOURCE_DIR` compile definition already provided by the CMakeLists.
+### Demo
+
+https://github.com/user-attachments/assets/2ded0495-ba40-4c7e-8bc5-94fda423b1fc
