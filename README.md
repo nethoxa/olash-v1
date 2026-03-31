@@ -1,5 +1,7 @@
 ## Gerstner Wave Model
 
+**NOTE**: this was wrote in 2023 during my second year at collegue, the new commits are updates to the README mostly to make it more *"pretty"* for ppl that does not know me (you)
+
 Classical sinusoidal displacement moves vertices only vertically, producing unrealistic symmetric profiles. The Gerstner (trochoidal) wave models water particles moving in **circular orbits**, compressing geometry near crests and stretching it in troughs -- matching asymmetric wave profiles observed in real oceans.
 
 For a vertex at position **P** with normalized wave direction **D** projected onto the XZ plane:
